@@ -1,0 +1,3944 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/NET/c4dm/event.owl", "http://www.w3.org/2002/07/owl", "http://linkedevents.org/ontology", "http://sw.opencyc.org/2009/04/07/concept/en", "http://www.w3.org/2001/XMLSchema", "http://purl.org/vocab/relationship", "http://purl.org/dc/elements/1.1", "http://open.vocab.org/terms", "http://www.w3.org/2000/01/rdf-schema", "http://web.resource.org/cc", "http://purl.org/ontology/mo", "http://xmlns.com/foaf/0.1", "http://purl.org/dc/dcmitype", "http://purl.org/vocab/bio/0.1", "http://www.w3.org/2006/time" ],
+    "prefixList" : {
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "vann" : "http://purl.org/vocab/vann/",
+      "status" : "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "dct" : "http://purl.org/dc/terms/",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+      "ov" : "http://open.vocab.org/terms/",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "label" : "http://purl.org/net/vocab/2004/03/label#",
+      "skos" : "http://www.w3.org/2004/02/skos/core#",
+      "" : "http://www.semanticweb.org/owl/owlapi/turtle#",
+      "dc" : "http://purl.org/dc/elements/1.1/",
+      "xml" : "http://www.w3.org/XML/1998/namespace",
+      "foaf" : "http://xmlns.com/foaf/0.1/",
+      "msg0" : "http://web.resource.org/cc/"
+    },
+    "title" : {
+      "en" : "BIO: A vocabulary for biographical information"
+    },
+    "iri" : "http://purl.org/vocab/bio/0.1/",
+    "author" : [ "http://iandavis.com/id/me", "David Galbraith" ],
+    "description" : {
+      "undefined" : "<div>n        n        <p>The BIO vocabulary contains terms useful for finding out more about people and their backgrounds and has some cross-over into genealogical information. n        The approach taken is to describe a person's life as a series of interconnected key events, around which other information can be woven. n        This vocabulary defines the event framework and supplies a set of core event types that cover many use cases, but it is expected that it n        will be extended in other vocabularies to suit their needs. The intention of this vocabulary is to describe biographical events of people n        and this intention carries through to the definitions of the properties and classes which are person-centric rather than neutral. For example n        the Employment event puts the person being employed as the principal agent in the event rather than the employer.</p>n        <p>The BIO vocabulary defines a number of core classes and properties for describing biographical information: </p>n        <p><figure><img src=\"/bio/core-classes.png\"></img><br></br>Figure: Biography Vocabulary Core Classes (<a href=\"http://vocab.org/bio/core-classes.png\">PNG version</a>, <a href=\"http://vocab.org/bio/core-classes.svg\">SVG version</a>)</figure></p>n        <p>At its heart the BIO vocabulary is concerned with people, their relationships and the events in their lives. Together these can ben        used to build up a narrative of a person's life and their interactions with other people, organizations and the world around them. Events bound intervalsn        of time that may be associated with particular relationships between people and groups or organisations. Many different types of life event aren        defined in this vocabulary including the obvious Birth, Marriage and Death but also Coronation, Performance and even Murder. These events are not intendedn        to be fully comprehensive but are representative of the types of events associated with biographical material. Currently the relationship segment of then        vocabulary is underspecified with only a generic Relationship class available. It is envisaged that many types of relationship such as families, employmentsn        and ownerships will be specified in the future.</p>n        <p>The sequence of events and intervals build a timeline of history against which people and their relationships can be placed. The aim isn        to enable simple forms of genealogical reasoning such as determining whether a child was born out of wedlock or the location of a familyn        given the fact one of their children was attending a particular school. Events are ordered in time by relating them to one another and to abstractn        intervals of time:</p>n        <p><figure><img src=\"/bio/timelines.png\"></img><br></br>Figure: Biography Vocabulary Timelines(<a href=\"http://vocab.org/bio/timelines.png\">PNG version</a>, <a href=\"http://vocab.org/bio/timelines.svg\">SVG version</a>)</figure></p>n        <p>Please see <a href=\"https://github.com/iand/vocab-bio\">https://github.com/iand/vocab-bio</a> for the master version of this vocabulary.</p>n      </div>"
+    },
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2010-05-10",
+        "type" : "label"
+      } ],
+      "identifier" : [ {
+        "identifier" : "identifier",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/schema",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "David Galbraith",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "http://iandavis.com/id/me",
+        "type" : "iri"
+      } ],
+      "changeNote" : [ {
+        "identifier" : "changeNote",
+        "language" : "undefined",
+        "value" : "_:genid79",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "undefined",
+        "value" : "_:genid81",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "undefined",
+        "value" : "_:genid83",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "undefined",
+        "value" : "_:genid80",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "undefined",
+        "value" : "_:genid78",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "undefined",
+        "value" : "_:genid82",
+        "type" : "label"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "en",
+        "value" : "This document describes a vocabulary for describing biographical information about people, both living and dead. ",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "BIO: A vocabulary for biographical information",
+        "type" : "label"
+      } ],
+      "termGroup" : [ {
+        "identifier" : "termGroup",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/termgroup3",
+        "type" : "iri"
+      }, {
+        "identifier" : "termGroup",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/termgroup2",
+        "type" : "iri"
+      }, {
+        "identifier" : "termGroup",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/termgroup1",
+        "type" : "iri"
+      }, {
+        "identifier" : "termGroup",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/termgroup4",
+        "type" : "iri"
+      }, {
+        "identifier" : "termGroup",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/termgroup5",
+        "type" : "iri"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/examples/1",
+        "type" : "iri"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "Copyright © 2002-2010 Ian Davis and David Galbraith",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "bio",
+        "type" : "label"
+      } ],
+      "discussionList" : [ {
+        "identifier" : "discussionList",
+        "language" : "undefined",
+        "value" : "http://lists.foaf-project.org/mailman/listinfo/foaf-dev",
+        "type" : "iri"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2003-03-07",
+        "type" : "label"
+      } ],
+      "historyNote" : [ {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "_:genid72",
+        "type" : "label"
+      }, {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "_:genid70",
+        "type" : "label"
+      }, {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "_:genid71",
+        "type" : "label"
+      }, {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "_:genid74",
+        "type" : "label"
+      }, {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "_:genid75",
+        "type" : "label"
+      }, {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "_:genid76",
+        "type" : "label"
+      }, {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "_:genid77",
+        "type" : "label"
+      }, {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "_:genid73",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "128",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "85",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "131",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "20",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "139",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://purl.org/vocab/bio/0.1/Inauguration",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Inauguration",
+      "en" : "Inauguration"
+    },
+    "comment" : {
+      "en" : "The ceremonial event marking the beginning of a person's term of office as a leader."
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Enrolment",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Enrolment",
+      "en" : "Enrolment"
+    },
+    "comment" : {
+      "en" : "The event of a person initiating attendence to a school or other place of learning."
+    },
+    "id" : "2",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Event",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "en",
+        "value" : "This class is intended to describe biographical events, i.e. events in the life of a person.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ],
+      "changeNote" : [ {
+        "identifier" : "changeNote",
+        "language" : "undefined",
+        "value" : "_:genid66",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "undefined",
+        "value" : "_:genid65",
+        "type" : "label"
+      } ],
+      "historyNote" : [ {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "_:genid63",
+        "type" : "label"
+      }, {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "_:genid64",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Event",
+      "en" : "Event"
+    },
+    "subClasses" : [ "26", "1" ],
+    "comment" : {
+      "en" : "An event is an occurrence that brings about a change in the state of affairs for one or more people and/or other agents. Events are assumed to occur over a period of time and may not have precise start and end points."
+    },
+    "id" : "6",
+    "superClasses" : [ "22", "23", "24", "25" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Agent",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://sw.opencyc.org/2009/04/07/concept/en/Event",
+    "baseIri" : "http://sw.opencyc.org/2009/04/07/concept/en",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "subClasses" : [ "6" ],
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/PositionChange",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PositionChange",
+      "en" : "Change of Position"
+    },
+    "subClasses" : [ "34", "35" ],
+    "comment" : {
+      "en" : "The event of a person changing the position they hold with an employer."
+    },
+    "id" : "33",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/NET/c4dm/event.owl#Event",
+    "baseIri" : "http://purl.org/NET/c4dm/event.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "subClasses" : [ "6" ],
+    "attributes" : [ "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Death",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "changeNote" : [ {
+        "identifier" : "changeNote",
+        "language" : "undefined",
+        "value" : "_:genid89",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "_:genid60",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Death",
+      "en" : "Death"
+    },
+    "subClasses" : [ "39", "40" ],
+    "comment" : {
+      "en" : "The event of a person's life ending."
+    },
+    "id" : "38",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Divorce",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "_:genid19",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Divorce",
+      "en" : "Divorce"
+    },
+    "comment" : {
+      "en" : "The event of legally dissolving a marriage."
+    },
+    "id" : "41",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://web.resource.org/cc/License",
+    "baseIri" : "http://web.resource.org/cc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "License"
+    },
+    "individuals" : [ {
+      "iri" : "http://creativecommons.org/licenses/by/1.0/",
+      "baseIri" : "http://creativecommons.org/licenses/by",
+      "annotations" : {
+        "permits" : [ {
+          "identifier" : "permits",
+          "language" : "undefined",
+          "value" : "http://web.resource.org/cc/Reproduction",
+          "type" : "iri"
+        }, {
+          "identifier" : "permits",
+          "language" : "undefined",
+          "value" : "http://web.resource.org/cc/DerivativeWorks",
+          "type" : "iri"
+        }, {
+          "identifier" : "permits",
+          "language" : "undefined",
+          "value" : "http://web.resource.org/cc/Distribution",
+          "type" : "iri"
+        } ],
+        "requires" : [ {
+          "identifier" : "requires",
+          "language" : "undefined",
+          "value" : "http://web.resource.org/cc/Notice",
+          "type" : "iri"
+        }, {
+          "identifier" : "requires",
+          "language" : "undefined",
+          "value" : "http://web.resource.org/cc/Attribution",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : { }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Annulment",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Annulment",
+      "en" : "Annulment"
+    },
+    "comment" : {
+      "en" : "The event of declaring a marriage void from the beginning as though it never existed."
+    },
+    "id" : "62",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Funeral",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Funeral",
+      "en" : "Funeral"
+    },
+    "comment" : {
+      "en" : "The event of marking a person's death with a ceremony."
+    },
+    "id" : "63",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://sw.opencyc.org/2009/04/07/concept/en/WeddingEvent_Generic",
+    "baseIri" : "http://sw.opencyc.org/2009/04/07/concept/en",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WeddingEvent_Generic"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Adoption",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Adoption",
+      "en" : "Adoption"
+    },
+    "comment" : {
+      "en" : "The event of creating of a legal parent/child relationship that does not exist biologically."
+    },
+    "id" : "65",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Burial",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Burial",
+      "en" : "Burial"
+    },
+    "comment" : {
+      "en" : "The event of interring the remains of a person's body into the ground."
+    },
+    "id" : "66",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://web.resource.org/cc/Work",
+    "baseIri" : "http://web.resource.org/cc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Work"
+    },
+    "individuals" : [ {
+      "iri" : "file:///var/www/vocab.org/www/htdocs/bio/",
+      "baseIri" : "file:///var/www/vocab.org/www/htdocs",
+      "annotations" : {
+        "license" : [ {
+          "identifier" : "license",
+          "language" : "undefined",
+          "value" : "http://creativecommons.org/licenses/by/1.0/",
+          "type" : "iri"
+        } ],
+        "type" : [ {
+          "identifier" : "type",
+          "language" : "undefined",
+          "value" : "http://purl.org/dc/dcmitype/Text",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : { }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Execution",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-05",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Execution",
+      "en" : "Execution"
+    },
+    "comment" : {
+      "en" : "The event of a person being deliberately killed as punishment."
+    },
+    "id" : "40",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Cremation",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "_:genid12",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Cremation",
+      "en" : "Cremation"
+    },
+    "comment" : {
+      "en" : "The event of disposing of the remains of a person's body by fire."
+    },
+    "id" : "71",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Accession",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Accession",
+      "en" : "Accession"
+    },
+    "comment" : {
+      "en" : "The event of a person succeeding to the right to hold regal power. This event is often automatic on the death of the previous monarch and is usually followed by a coronation event."
+    },
+    "id" : "74",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "individuals" : [ {
+      "iri" : "http://iandavis.com/id/me",
+      "baseIri" : "http://iandavis.com/id",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "Ian Davis",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "me"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.w3.org/2006/time#ProperInterval",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProperInterval"
+    },
+    "subClasses" : [ "76" ],
+    "attributes" : [ "external" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Baptism",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "changeNote" : [ {
+        "identifier" : "changeNote",
+        "language" : "undefined",
+        "value" : "_:genid96",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Baptism",
+      "en" : "Baptism"
+    },
+    "comment" : {
+      "en" : "The ceremonial event held to admit a person to membership of a Christian church."
+    },
+    "id" : "54",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Promotion",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Promotion",
+      "en" : "Promotion"
+    },
+    "comment" : {
+      "en" : "The event of a person changing the position they hold with an employer to one with more importance or responsibility."
+    },
+    "id" : "34",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Disbanding",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2011-06-10",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Disbanding",
+      "en" : "Disbanding"
+    },
+    "comment" : {
+      "en" : "The event of a group or organization being disbanded."
+    },
+    "id" : "61",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://open.vocab.org/terms/SchemaExample",
+    "baseIri" : "http://open.vocab.org/terms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SchemaExample"
+    },
+    "individuals" : [ {
+      "iri" : "http://purl.org/vocab/bio/examples/1",
+      "baseIri" : "http://purl.org/vocab/bio/examples",
+      "comment" : {
+        "undefined" : "<p>Based on information at <a href=\"http://en.wikipedia.org/wiki/Henry_VIII_of_England\">Wikipedia</a> and <a href=\"http://www3.dcs.hull.ac.uk/cgi-bin/gedlkup/n=royal?royal00828\">Hull University</a></p>n<pre><code>@prefix bio: &lt;http://purl.org/vocab/bio/0.1/&gt; .n@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .n@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .nn_:henryviiin  a foaf:Personn  ; foaf:name \"Henry VIII, King of England\"n  ; bio:father _:henryviin  ; bio:mother _:elizplantagenetn  ; bio:child _:child1, _:child2, _:child3, _:child4, _:child5, _:child6, _:child7, _:child8n  ; bio:birth _:birthn  ; bio:death _:deathn  ; bio:event _:burial, _:accession, _:coronation, _:marriage1n            , _:marriage2, _:marriage3, _:marriage4, _:marriage5, _:marriage6n  .nn_:henryviin  a foaf:Personn  ; foaf:name \"Henry VII Tudor, King of England\"n  ; bio:child _:henryviiin  .nn_:elizplantagenetn  a foaf:Personn  ; foaf:name \"Elizabeth of York\"n  ; bio:child _:henryviiin  .n  n_:birthn  a bio:Birthn  ; rdfs:label \"The birth of Henry VIII to Henry VII and Elizabeth Plantagenet on 28 June 1491\"n  ; bio:date \"1491-06-28\"n  ; bio:place &lt;http://dbpedia.org/resource/Palace_of_Placentia&gt;n  ; bio:parent _:henryvii, _:elizplantagenetn  ; bio:principal _:henryviiin  .nn_:deathn  a bio:Deathn  ; rdfs:label \"The death of Henry VIII on 28 January 1547\"n  ; bio:date \"1547-01-28\"n  ; bio:place &lt;http://dbpedia.org/resource/Palace_of_Whitehall&gt;n  ; bio:principal _:henryviiin  .n  nn_:accessionn  a bio:Accessionn  ; rdfs:label \"The accession of Henry VIII to the throne of England on 21 April 1509\"n  ; bio:date \"1509-06-24\"n  ; bio:principal _:henryviiin  ; bio:state &lt;http://dbpedia.org/resource/Kingdom_of_England&gt;n  ; bio:immediatelyPrecedingEvent [ a bio:Deathn                                    ; rdfs:label \"The death of Henry VII on 9 May 1509\"n                                    ; bio:date \"1509-05-09\"n                                    ; bio:place &lt;http://dbpedia.org/resource/Richmond_Palace&gt;n                                    ; bio:principal _:henryviin                                  ]n  .nn_:coronationn  a bio:Coronationn  ; rdfs:label \"The coronation of Henry VIII as King of England on 24 June 1509\"n  ; bio:date \"1509-06-24\"n  ; bio:place &lt;http://dbpedia.org/page/Westminster_Abbey&gt;n  ; bio:principal _:henryviiin  ; bio:precedingEvent _:accessionn  .nn_:burialn  a bio:Burialn  ; rdfs:label \"The burial of Henry VII at St.George's Chapel, Windsor Castle,England\"n  ; bio:place &lt;http://dbpedia.org/resource/St_George%E2%80%99s_Chapel%2C_Windsor&gt;n  ; bio:principal _:henryviiin  ; bio:precedingEvent _:deathn  .nn_:marriage1n  a bio:Marriagen  ; rdfs:label \"The marriage of Henry VIII and Catherine of Aragon\"n  ; bio:date \"1509-06-11\"n  ; bio:place &lt;http://dbpedia.org/resource/Palace_of_Placentia&gt;n  ; bio:partner _:henryvii, _:catharagonn  .nn_:annulment1n  a bio:Annulmentn  ; rdfs:label \"The annulment of the marriage between Henry VIII and Catherine of Aragon\"n  ; bio:date \"1533-05-23\"n  ; bio:partner _:henryvii, _:catharagon n  ; bio:officiator &lt;http://dbpedia.org/resource/Thomas_Cranmer&gt;n  .nn_:catharagonn  a foaf:Personn  ; foaf:name \"Anne Boleyn\"n  ; bio:child _:child1, _:child2, _:child3, _:child4, _:child5n  ; bio:event _:marriage1, _:annulment1n  .nn_:child1n  a foaf:Personn  ; rdfs:label \"Unnamed daughter of Henry VIII and Catherine of Aragon\"n  ; bio:event [ a bio:Birthn                ; bio:date \"1510-01-31\"n                ; bio:principal _:child1n                ; bio:parent _:henryviii, _:catharagonn              ]n  ; bio:event [ a bio:Deathn                ; bio:date \"1510-02-02\"n                ; bio:principal _:child1n              ]n  .nn_:child2n  a foaf:Personn  ; foaf:name \"Henry\"n  ; bio:event [ a bio:Birthn                ; bio:date \"1511-01-01\"n                ; bio:principal _:child2n                ; bio:parent _:henryviii, _:catharagonn              ]n  ; bio:event [ a bio:Deathn                ; bio:date \"1511-02-22\"n                ; bio:principal _:child2n              ]n  .n  n_:child3n  a foaf:Personn  ; foaf:name \"Henry\"n  ; bio:event [ a bio:Birthn                ; bio:date \"1514-12\"n                ; bio:principal _:child3n                ; bio:parent _:henryviii, _:catharagonn              ]n  ; bio:event [ a bio:Deathn                ; bio:principal _:child3n              ]n  .nn_:child4n  a foaf:Personn  ; foaf:name \"Mary\"n  ; bio:event [ a bio:Birthn                ; bio:date \"1516-02-18\"n                ; bio:principal _:child4n                ; bio:parent _:henryviii, _:catharagonn              ]n  ; bio:event [ a bio:Deathn                ; bio:date \"1558-11-17\"n                ; bio:principal _:child4n              ]n  .nnn_:child5n  a foaf:Personn  ; rdfs:label \"Unnamed daughter of Henry VIII and Catherine of Aragon\"n  ; bio:event [ a bio:Birthn                ; bio:date \"1518-11\"n                ; bio:principal _:child5n                ; bio:parent _:henryviii, _:catharagonn              ]n  ; bio:event [ a bio:Deathn                ; bio:principal _:child5n              ]n  .n  nn_:marriage2n  a bio:Marriagen  ; rdfs:label \"The marriage of Henry VIII and Anne Boleyn\"n  ; bio:date \"1533-01-25\"n  ; bio:partner _:henryvii, _:anneboleynn  ; bio:place &lt;http://dbpedia.org/resource/Westminster_Abbey&gt;n  .nn_:anneboleynn  a foaf:Personn  ; foaf:name \"Anne Boleyn\"n  ; bio:child _:child6n  ; bio:event _:marriage2, _:annulment2, _:anneboleyn-deathn  .nn_:annulment2n  a bio:Annulmentn  ; rdfs:label \"The annulment of the marriage between Henry VIII and Anne Boleyn\"n  ; bio:date \"1536-05-17\"n  ; bio:partner _:henryvii, _:anneboleyn n  .n  n_:anneboleyn-deathn  a bio:Executionn  ; rdfs:label \"The beheading of Anne Boleyn\"n  ; bio:date \"1536-05-19\"n  ; bio:place &lt;http://dbpedia.org/resource/Tower_of_London&gt;n  ; bio:principal _:anneboleynn  .nn_:child6n  a foaf:Personn  ; foaf:name \"Elizabeth\"n  ; bio:event [ a bio:Birthn                ; bio:date \"1533-09-07\"n                ; bio:principal _:child6n                ; bio:parent _:henryviii, _:anneboleynn              ]n  ; bio:event [ a bio:Deathn                ; bio:date \"1603-03-24\"n                ; bio:principal _:child6n              ]n  .nn_:marriage3n  a bio:Marriagen  ; bio:date \"1536-05-20\"n  ; bio:partner _:henryviii, _:janeseymourn  ; bio:place &lt;http://dbpedia.org/resource/York_Place&gt;n  .nn_:janeseymourn  a foaf:Personn  ; foaf:name \"Jane Seymour\"n  ; bio:event _:marriage3, _:janeseymour-deathn  ; bio:child _:child7n  .nn_:janeseymour-deathn  a bio:Deathn  ; rdfs:label \"The death of Jane Seymour on 24 October 1537\"n  ; bio:date \"1537-10-24\"n  ; bio:principal _:janeseymourn  ; bio:place &lt;http://dbpedia.org/resource/Hampton_Court_Palace&gt;n  .n  nn_:child7n  a foaf:Personn  ; foaf:name \"Edward\"n  ; bio:event [ a bio:Birthn                ; bio:date \"1537-10-12\"n                ; bio:principal _:child7n                ; bio:parent _:henryviii, _:janeseymourn                ; bio:place &lt;http://dbpedia.org/resource/Hampton_Court_Palace&gt;n              ]n  ; bio:event [ a bio:Accessionn                ; bio:immediatelyPrecedingEvent _:deathn              ]n  ; bio:event [ a bio:Deathn                ; bio:date \"1553-07-06\"n                ; bio:principal _:child7n                ; bio:place &lt;http://dbpedia.org/resource/Palace_of_Placentia&gt;n              ]n  .nn_:marriage4n  a bio:Marriagen  ; bio:date \"1540-01-06\"n  ; bio:partner _:henryvii, _:anneclevesn  ; bio:place &lt;http://dbpedia.org/resource/Palace_of_Placentia&gt;n  ; bio:officiator &lt;http://dbpedia.org/resource/Thomas_Cranmer&gt;n  .n    n_:annulment3n  a bio:Annulmentn  ; rdfs:label \"The annulment of the marriage between Henry VIII and Anne of Cleves\"n  ; bio:date \"1540-07-09\"n  ; bio:partner _:henryviii, _:anneclevesn  .nn_:anneclevesn  a foaf:Personn  ; foaf:name \"Anne of Cleves\"n  ; bio:event _:marriage4, _:annulment3n  .nn_:marriage5n  a bio:Marriagen  ; bio:date \"1540-07-28\"n  ; bio:partner _:henryviii, _:cathhowardn  ; bio:place &lt;http://dbpedia.org/resource/Oatlands_Palace&gt;n  .n  n_:cathhowardn  a foaf:Personn  ; foaf:name \"Catherine Howard\"n  ; bio:event _:marriage5, _:cathhoward-deathn  .n  n_:cathhoward-deathn  a bio:Executionn  ; rdfs:label \"The beheading of Catherine Howard\"n  ; bio:date \"1542-02-13\"n  ; bio:place &lt;http://dbpedia.org/resource/Tower_of_London&gt;n  ; bio:principal _:cathhowardn  .nn_:marriage6n  a bio:Marriagen  ; rdfs:label \"The marriage between Henry VIII and Catherine Parr\"n  ; bio:date \"1543-07-12\"n  ; bio:place &lt;http://dbpedia.org/resource/Hampton_Court_Palace&gt;n  ; bio:partner _:henryviii, _:cathparrn  .n  n_:cathparrn  a foaf:Personn  ; foaf:name \"Catherine Parr\"n  ; bio:event _:marriage6n  .nnn_:elizblountn  a foaf:Personn  ; foaf:name \"Elizabeth Blount\"n  ; bio:child _:child8n  .n  n_:child8n  a foaf:Personn  ; foaf:name \"Henry FitzRoy\"n  ; foaf:mother _:elizblountn  ; foaf:father _:henryviiin  ; bio:event [ a bio:Birthn                ; bio:principal _:child8n                ; bio:date \"1519-06-15\"n                ; bio:parent _:henryviii, _:elizblountn                ; bio:place &lt;http://dbpedia.org/resource/Blackmore&gt;n                ]n  .nn_:marriage1-intervaln  a bio:Intervaln  ; rdfs:label \"The period of time during which Henry VIII and Catherine of Aragon were married\"n  ; bio:initiatingEvent _:marriage1n  ; bio:concludingEvent _:annulment1n  .nn_:marriage2-intervaln  a bio:Intervaln  ; rdfs:label \"The period of time during which Henry VIII and Anne Boleyn were married\"n  ; bio:initiatingEvent _:marriage2n  ; bio:concludingEvent _:annulment2n  .n  n_:marriage3-intervaln  a bio:Intervaln  ; rdfs:label \"The period of time during which Henry VIII and Jane Seymour were married\"n  ; bio:initiatingEvent _:marriage3n  ; bio:concludingEvent _:janeseymour-deathn  .nn_:marriage4-intervaln  a bio:Intervaln  ; rdfs:label \"The period of time during which Henry VIII and Anne of Cleves were married\"n  ; bio:initiatingEvent _:marriage4n  ; bio:concludingEvent _:annulment3n  .nn_:marriage5-intervaln  a bio:Intervaln  ; rdfs:label \"The period of time during which Henry VIII and Catherine Howard were married\"n  ; bio:initiatingEvent _:marriage5n  ; bio:terminatingEvent _:cathhoward-deathn  .nn_:marriage6-intervaln  a bio:Intervaln  ; rdfs:label \"The period of time during which Henry VIII and Catherine Parr were married\"n  ; bio:initiatingEvent _:marriage6n  ; bio:terminatingEvent _:henryviii-deathn  .n</code></pre>n"
+      },
+      "labels" : {
+        "IRI-based" : "1",
+        "undefined" : "A Biography of Henry VIII, King of England"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/GroupEvent",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GroupEvent",
+      "en" : "Group Event"
+    },
+    "subClasses" : [ "41", "62", "79", "70" ],
+    "comment" : {
+      "en" : "A type of event that is principally about one or more agents and their partnership. Other agents may be involved but the event is most significant for the partner agent."
+    },
+    "id" : "26",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Formation",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2011-06-10",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Formation",
+      "en" : "Formation"
+    },
+    "comment" : {
+      "en" : "The event of a group or organization coming into being."
+    },
+    "id" : "51",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Dismissal",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Dismissal",
+      "en" : "Dismissal"
+    },
+    "comment" : {
+      "en" : "The event of a person involuntarily giving up their office or position. Dismissal is often perceived to be the employee's fault and may be considered disgraceful."
+    },
+    "id" : "4",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Naturalization",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "_:genid27",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Naturalization",
+      "en" : "Naturalization"
+    },
+    "comment" : {
+      "en" : "The event of a person obtaining citizenship. Note that the place the naturalization event occurs at may be different from the state the person is obtaining citizenship of. "
+    },
+    "id" : "37",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/vocab/relationship/Relationship",
+    "baseIri" : "http://purl.org/vocab/relationship",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Relationship"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/IndividualEvent",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IndividualEvent",
+      "en" : "Individual Event"
+    },
+    "subClasses" : [ "0", "2", "56", "54", "61", "58", "49", "33", "38", "51", "43", "37", "4", "94", "95", "96", "63", "65", "66", "97", "88", "98", "99", "71", "100", "74", "101", "102" ],
+    "comment" : {
+      "en" : "A type of event that is principally about a single person, group or organization. Other agents may be involved but the event is most significant for the principal agent."
+    },
+    "id" : "1",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Murder",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-05",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Murder",
+      "en" : "Murder"
+    },
+    "subClasses" : [ "92" ],
+    "comment" : {
+      "en" : "The event of a person being killed unlawfully with intent by the killer."
+    },
+    "id" : "39",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/BasMitzvah",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BasMitzvah",
+      "en" : "BasMitzvah"
+    },
+    "comment" : {
+      "en" : "The ceremonial event held when a Jewish girl reaching age 13, also known as \"Bat Mitzvah.\""
+    },
+    "id" : "94",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/dc/dcmitype/Event",
+    "baseIri" : "http://purl.org/dc/dcmitype",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "subClasses" : [ "6" ],
+    "attributes" : [ "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Performance",
+    "equivalent" : [ "109" ],
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2011-06-12",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Performance",
+      "en" : "Performance"
+    },
+    "comment" : {
+      "en" : "The event of an individual or a group of performers performing. Examples include concerts, plays, recitals, recordings, busking etc."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "70",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Emigration",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "_:genid21",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Emigration",
+      "en" : "Emigration"
+    },
+    "comment" : {
+      "en" : "The event of a person leaving their homeland with the intent of residing elsewhere."
+    },
+    "id" : "98",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/NameChange",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NameChange",
+      "en" : "Change of Name"
+    },
+    "comment" : {
+      "en" : "The event of a person changing their name."
+    },
+    "id" : "56",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Marriage",
+    "equivalent" : [ "64" ],
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "changeNote" : [ {
+        "identifier" : "changeNote",
+        "language" : "undefined",
+        "value" : "_:genid68",
+        "type" : "label"
+      } ],
+      "historyNote" : [ {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "_:genid67",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "_:genid8",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Marriage",
+      "en" : "Marriage"
+    },
+    "comment" : {
+      "en" : "The event of creating uniting the participants into a new family unit, sometimes accompanied by a formal wedding ceremony. This is intended to cover a broad range of marriages including those given formal legal standing, common-law, or by convention. It is not restricted to marriages of two people of the opposite gender, but also includes polygamous and same-sex unions."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "79",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://purl.org/dc/dcmitype/Text",
+    "baseIri" : "http://purl.org/dc/dcmitype",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Text"
+    },
+    "individuals" : [ {
+      "iri" : "http://vocab.org/bio/0.1/.json",
+      "baseIri" : "http://vocab.org/bio/0.1",
+      "annotations" : {
+        "format" : [ {
+          "identifier" : "format",
+          "language" : "undefined",
+          "value" : "application/json",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : ".json",
+        "undefined" : "JSON"
+      }
+    }, {
+      "iri" : "http://vocab.org/bio/0.1/.html",
+      "baseIri" : "http://vocab.org/bio/0.1",
+      "annotations" : {
+        "format" : [ {
+          "identifier" : "format",
+          "language" : "undefined",
+          "value" : "text/html",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : ".html",
+        "undefined" : "HTML"
+      }
+    }, {
+      "iri" : "http://vocab.org/bio/0.1/.rdf",
+      "baseIri" : "http://vocab.org/bio/0.1",
+      "annotations" : {
+        "hasFormat" : [ {
+          "identifier" : "hasFormat",
+          "language" : "undefined",
+          "value" : "http://vocab.org/bio/0.1/.html",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasFormat",
+          "language" : "undefined",
+          "value" : "http://vocab.org/bio/0.1/.turtle",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasFormat",
+          "language" : "undefined",
+          "value" : "http://vocab.org/bio/0.1/.json",
+          "type" : "iri"
+        } ],
+        "primaryTopic" : [ {
+          "identifier" : "primaryTopic",
+          "language" : "undefined",
+          "value" : "http://purl.org/vocab/bio/0.1/",
+          "type" : "iri"
+        } ],
+        "topic" : [ {
+          "identifier" : "topic",
+          "language" : "undefined",
+          "value" : "http://purl.org/vocab/bio/0.1/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : ".rdf"
+      }
+    }, {
+      "iri" : "http://vocab.org/bio/0.1/.turtle",
+      "baseIri" : "http://vocab.org/bio/0.1",
+      "annotations" : {
+        "format" : [ {
+          "identifier" : "format",
+          "language" : "undefined",
+          "value" : "text/plain",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : ".turtle",
+        "undefined" : "Turtle"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Coronation",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Coronation",
+      "en" : "Coronation"
+    },
+    "comment" : {
+      "en" : "The ceremonial event of a person being invested with regal power to become a monarch."
+    },
+    "id" : "43",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Interval",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Interval",
+      "en" : "Interval"
+    },
+    "comment" : {
+      "en" : "A extended interval of time related to a particular state of affairs, such as the lifespan of a person or a period of employment."
+    },
+    "id" : "76",
+    "superClasses" : [ "77" ]
+  }, {
+    "iri" : "http://linkedevents.org/ontology/Event",
+    "baseIri" : "http://linkedevents.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "subClasses" : [ "6" ],
+    "attributes" : [ "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/BarMitzvah",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BarMitzvah",
+      "en" : "BarMitzvah"
+    },
+    "comment" : {
+      "en" : "The ceremonial event held when a Jewish boy reaches age 13."
+    },
+    "id" : "96",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Redundancy",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Redundancy",
+      "en" : "Redundancy"
+    },
+    "comment" : {
+      "en" : "The event of a person involuntarily giving up an office or position that is no longer needed. Redundancy is usually perceived to be the employer's fault and is usually due to conditions outside of the employee's control."
+    },
+    "id" : "97",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Birth",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ],
+      "changeNote" : [ {
+        "identifier" : "changeNote",
+        "language" : "undefined",
+        "value" : "_:genid93",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "_:genid2",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Birth",
+      "en" : "Birth"
+    },
+    "comment" : {
+      "en" : "The event of a person entering into life."
+    },
+    "id" : "88",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Retirement",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Retirement",
+      "en" : "Retirement"
+    },
+    "comment" : {
+      "en" : "The event of a person exiting an occupational relationship with an employer after a qualifying time period. In many cultures retirement is expected and even required once the person reaches a particular age."
+    },
+    "id" : "100",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Employment",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Employment",
+      "en" : "Employment"
+    },
+    "comment" : {
+      "en" : "The event of a person entering an occupational relationship with an employer."
+    },
+    "id" : "101",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Investiture",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Investiture",
+      "en" : "Investiture"
+    },
+    "comment" : {
+      "en" : "The ceremonial event of a person taking a public office or honour."
+    },
+    "id" : "102",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/ontology/mo/Performance",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Performance"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "85",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bag"
+    },
+    "individuals" : [ {
+      "iri" : "http://purl.org/vocab/bio/0.1/termgroup2",
+      "baseIri" : "http://purl.org/vocab/bio/0.1",
+      "labels" : {
+        "IRI-based" : "termgroup2",
+        "en" : "Types of event"
+      }
+    }, {
+      "iri" : "http://purl.org/vocab/bio/0.1/termgroup3",
+      "baseIri" : "http://purl.org/vocab/bio/0.1",
+      "labels" : {
+        "IRI-based" : "termgroup3",
+        "en" : "Properties of an event"
+      }
+    }, {
+      "iri" : "http://purl.org/vocab/bio/0.1/termgroup1",
+      "baseIri" : "http://purl.org/vocab/bio/0.1",
+      "labels" : {
+        "IRI-based" : "termgroup1",
+        "en" : "Properties of a person"
+      }
+    }, {
+      "iri" : "http://purl.org/vocab/bio/0.1/termgroup4",
+      "baseIri" : "http://purl.org/vocab/bio/0.1",
+      "labels" : {
+        "IRI-based" : "termgroup4",
+        "en" : "Properties that relate an event to an agent"
+      }
+    }, {
+      "iri" : "http://purl.org/vocab/bio/0.1/termgroup5",
+      "baseIri" : "http://purl.org/vocab/bio/0.1",
+      "labels" : {
+        "IRI-based" : "termgroup5",
+        "en" : "Properties that relate an event to another event"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "131"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "44",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "130",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Graduation",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "_:genid15",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Graduation",
+      "en" : "Graduation"
+    },
+    "comment" : {
+      "en" : "The event of a person being awarded educational diplomas or degrees."
+    },
+    "id" : "58",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Ordination",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Ordination",
+      "en" : "Ordination"
+    },
+    "comment" : {
+      "en" : "The ceremonial event held when a person receives authority to act in religious matters."
+    },
+    "id" : "49",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "125",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Relationship",
+    "equivalent" : [ "89" ],
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2011-06-14",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Relationship",
+      "en" : "Agent Relationship"
+    },
+    "comment" : {
+      "en" : "A particular type of connection existing between people, groups or organizations related to or having dealings with each other."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Imprisonment",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-04",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Imprisonment",
+      "en" : "Imprisonment"
+    },
+    "comment" : {
+      "en" : "The event of a person being detained in a jail or prison."
+    },
+    "id" : "95",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Demotion",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Demotion",
+      "en" : "Demotion"
+    },
+    "comment" : {
+      "en" : "The event of a person changing the position they hold with an employer to one with less importance or responsibility."
+    },
+    "id" : "35",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Document",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Document"
+    },
+    "individuals" : [ {
+      "iri" : "http://vocab.org/bio/0.1/.json",
+      "baseIri" : "http://vocab.org/bio/0.1",
+      "annotations" : {
+        "format" : [ {
+          "identifier" : "format",
+          "language" : "undefined",
+          "value" : "application/json",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : ".json",
+        "undefined" : "JSON"
+      }
+    }, {
+      "iri" : "http://vocab.org/bio/0.1/.html",
+      "baseIri" : "http://vocab.org/bio/0.1",
+      "annotations" : {
+        "format" : [ {
+          "identifier" : "format",
+          "language" : "undefined",
+          "value" : "text/html",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : ".html",
+        "undefined" : "HTML"
+      }
+    }, {
+      "iri" : "http://vocab.org/bio/0.1/.rdf",
+      "baseIri" : "http://vocab.org/bio/0.1",
+      "annotations" : {
+        "hasFormat" : [ {
+          "identifier" : "hasFormat",
+          "language" : "undefined",
+          "value" : "http://vocab.org/bio/0.1/.html",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasFormat",
+          "language" : "undefined",
+          "value" : "http://vocab.org/bio/0.1/.turtle",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasFormat",
+          "language" : "undefined",
+          "value" : "http://vocab.org/bio/0.1/.json",
+          "type" : "iri"
+        } ],
+        "primaryTopic" : [ {
+          "identifier" : "primaryTopic",
+          "language" : "undefined",
+          "value" : "http://purl.org/vocab/bio/0.1/",
+          "type" : "iri"
+        } ],
+        "topic" : [ {
+          "identifier" : "topic",
+          "language" : "undefined",
+          "value" : "http://purl.org/vocab/bio/0.1/",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : ".rdf"
+      }
+    }, {
+      "iri" : "http://vocab.org/bio/0.1/.turtle",
+      "baseIri" : "http://vocab.org/bio/0.1",
+      "annotations" : {
+        "format" : [ {
+          "identifier" : "format",
+          "language" : "undefined",
+          "value" : "text/plain",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : ".turtle",
+        "undefined" : "Turtle"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Resignation",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Resignation",
+      "en" : "Resignation"
+    },
+    "comment" : {
+      "en" : "The event of a person voluntarily giving up or quitting their office or position."
+    },
+    "id" : "99",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/Assassination",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-05",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Assassination",
+      "en" : "Assassination"
+    },
+    "comment" : {
+      "en" : "The event of a person being deliberately targeted and killed."
+    },
+    "id" : "92",
+    "superClasses" : [ "39" ]
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "116",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "124",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "133",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "138",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "1",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/agent",
+    "inverse" : "8",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "7",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "plural" : [ {
+        "identifier" : "plural",
+        "language" : "en",
+        "value" : "Agents",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-05",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "agent",
+      "en" : "Agent"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "6",
+    "subproperty" : [ "10", "11", "12", "13", "14", "15", "16", "17", "18" ],
+    "comment" : {
+      "en" : "A person, organization or group that plays a role in an event."
+    },
+    "attributes" : [ "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/participant",
+    "inverse" : "21",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "7",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "plural" : [ {
+        "identifier" : "plural",
+        "language" : "en",
+        "value" : "Participants",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2011-06-14",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "participant",
+      "en" : "Participant"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "20",
+    "comment" : {
+      "en" : "A person, group or organization that participates in a relationship for some time."
+    },
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/child",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "28",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "undefined",
+        "value" : "Note that this is a strict definition of child that does not include adopted children, step-children or similar non-biological relationships. The <a href=\"http://purl.org/vocab/relationship\">Relationship</a> vocabulary may be more suitable for broader types of parent/child relation.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "plural" : [ {
+        "identifier" : "plural",
+        "language" : "en",
+        "value" : "Children",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ],
+      "historyNote" : [ {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "_:genid69",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "child",
+      "en" : "Child"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "28",
+    "comment" : {
+      "en" : "A biological child of a person. "
+    },
+    "attributes" : [ "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/mother",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "28",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "undefined",
+        "value" : "Note that this is a strict definition of mother that does not include non-biological relationships. The <a href=\"http://purl.org/vocab/relationship\">Relationship</a> vocabulary may be more suitable for broader types of parent/child relation.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ],
+      "historyNote" : [ {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "_:genid84",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "mother",
+      "en" : "Mother"
+    },
+    "superproperty" : [ "9", "30" ],
+    "domain" : "28",
+    "comment" : {
+      "en" : "The biological mother of a person, also known as the genetrix."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/keywords",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "32",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "changeNote" : [ {
+        "identifier" : "changeNote",
+        "language" : "undefined",
+        "value" : "_:genid88",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2003-07-28",
+        "type" : "label"
+      } ],
+      "historyNote" : [ {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "_:genid87",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "keywords",
+      "en" : "Key Words"
+    },
+    "domain" : "28",
+    "comment" : {
+      "en" : "A comma delimited list of key words that describe a person."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "31"
+  }, {
+    "range" : "1",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "1",
+    "domain" : "43",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://purl.org/vocab/relationship/childOf",
+    "baseIri" : "http://purl.org/vocab/relationship",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "childOf"
+    },
+    "domain" : "44",
+    "subproperty" : [ "29", "45" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "30"
+  }, {
+    "range" : "1",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/witness",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "28",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "plural" : [ {
+        "identifier" : "plural",
+        "language" : "en",
+        "value" : "Witnesses",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-05",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "witness",
+      "en" : "Witness"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "6",
+    "comment" : {
+      "en" : "A person that witnesses and can bear testimony to the occurrence of an event."
+    },
+    "attributes" : [ "object" ],
+    "id" : "47"
+  }, {
+    "range" : "1",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "48"
+  }, {
+    "range" : "1",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "range" : "1",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "range" : "1",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "range" : "1",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
+  }, {
+    "range" : "1",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "range" : "1",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/spectator",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "28",
+    "annotations" : {
+      "plural" : [ {
+        "identifier" : "plural",
+        "language" : "en",
+        "value" : "Spectators",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-05",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "spectator",
+      "en" : "Spectator"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "6",
+    "subproperty" : [ "47" ],
+    "comment" : {
+      "en" : "A person that is present at and observes the occurrence of at least part of an event."
+    },
+    "attributes" : [ "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/employer",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "7",
+    "annotations" : {
+      "plural" : [ {
+        "identifier" : "plural",
+        "language" : "en",
+        "value" : "Employers",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-05",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "employer",
+      "en" : "Employer"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "6",
+    "comment" : {
+      "en" : "An agent that is involved in an event as an employer."
+    },
+    "attributes" : [ "object" ],
+    "id" : "10"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "range" : "26",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "range" : "1",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "range" : "26",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "73"
+  }, {
+    "range" : "77",
+    "domain" : "76",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
+  }, {
+    "range" : "26",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78"
+  }, {
+    "range" : "26",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "range" : "22",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "range" : "38",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82"
+  }, {
+    "range" : "38",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/concludingEvent",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "6",
+    "annotations" : {
+      "plural" : [ {
+        "identifier" : "plural",
+        "language" : "en",
+        "value" : "Concluding Event",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-06",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "concludingEvent",
+      "en" : "Concluding Event"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "85",
+    "comment" : {
+      "en" : "An event that marks the end of an interval and/or relationship. The event changes of the state of affairs that held during the interval. For example a period of study may be concluded by a Graduation event."
+    },
+    "attributes" : [ "object" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/father",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "28",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "undefined",
+        "value" : "Note that this is a strict definition of father that does not include non-biological relationships. The <a href=\"http://purl.org/vocab/relationship\">Relationship</a> vocabulary may be more suitable for broader types of parent/child relation.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-03",
+        "type" : "label"
+      } ],
+      "historyNote" : [ {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "_:genid97",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "father",
+      "en" : "Father"
+    },
+    "superproperty" : [ "9", "30" ],
+    "domain" : "28",
+    "comment" : {
+      "en" : "The biological father of a person, also known as the genitor."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/birth",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "88",
+    "annotations" : {
+      "plural" : [ {
+        "identifier" : "plural",
+        "language" : "en",
+        "value" : "Birth Events",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "historyNote" : [ {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "_:genid98",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "birth",
+      "en" : "Birth Event"
+    },
+    "superproperty" : [ "9", "8" ],
+    "domain" : "7",
+    "comment" : {
+      "en" : "An birth event associated with a person, group or organization."
+    },
+    "attributes" : [ "object" ],
+    "id" : "87"
+  }, {
+    "range" : "23",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "range" : "39",
+    "domain" : "92",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "91"
+  }, {
+    "range" : "25",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "93"
+  }, {
+    "range" : "1",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "103"
+  }, {
+    "range" : "1",
+    "domain" : "100",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104"
+  }, {
+    "range" : "1",
+    "domain" : "102",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "105"
+  }, {
+    "range" : "1",
+    "domain" : "101",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "106"
+  }, {
+    "range" : "1",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "107"
+  }, {
+    "range" : "1",
+    "domain" : "99",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/state",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "85",
+    "annotations" : {
+      "plural" : [ {
+        "identifier" : "plural",
+        "language" : "en",
+        "value" : "States",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-05",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "state",
+      "en" : "State"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "6",
+    "comment" : {
+      "en" : "A country or independent territory that is involved in an event."
+    },
+    "attributes" : [ "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#differentFrom",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "differentFrom"
+    },
+    "domain" : "44",
+    "subproperty" : [ "110", "111", "19", "5", "84", "8", "27", "112", "29", "21", "45", "113", "87", "114", "115", "116" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "9"
+  }, {
+    "range" : "1",
+    "domain" : "98",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117"
+  }, {
+    "range" : "1",
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
+  }, {
+    "range" : "1",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/principal",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "28",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "plural" : [ {
+        "identifier" : "plural",
+        "language" : "en",
+        "value" : "Principals",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-05",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "principal",
+      "en" : "Principal"
+    },
+    "superproperty" : [ "5" ],
+    "cardinality" : "1",
+    "domain" : "6",
+    "comment" : {
+      "en" : "A person that takes the primary and most important role in an event. For example the principal in a Birth event would be the child being born and the principal in a Burial event would be the deceased person."
+    },
+    "attributes" : [ "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/death",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "38",
+    "annotations" : {
+      "plural" : [ {
+        "identifier" : "plural",
+        "language" : "en",
+        "value" : "Death Events",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "historyNote" : [ {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "_:genid99",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "death",
+      "en" : "Death Event"
+    },
+    "superproperty" : [ "9", "8" ],
+    "domain" : "7",
+    "comment" : {
+      "en" : "An death event associated with a person, group or organization."
+    },
+    "attributes" : [ "object" ],
+    "id" : "115"
+  }, {
+    "range" : "1",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120"
+  }, {
+    "range" : "1",
+    "domain" : "97",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/immediatelyFollowingEvent",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "6",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "plural" : [ {
+        "identifier" : "plural",
+        "language" : "en",
+        "value" : "Immediately Following Events",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-06",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "immediatelyFollowingEvent",
+      "en" : "Immediately Following Event"
+    },
+    "superproperty" : [ "111", "9" ],
+    "domain" : "6",
+    "comment" : {
+      "en" : "An event that starts immediately after this event."
+    },
+    "attributes" : [ "object" ],
+    "id" : "116"
+  }, {
+    "range" : "1",
+    "domain" : "95",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "122"
+  }, {
+    "range" : "1",
+    "domain" : "94",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/olb",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "125",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "changeNote" : [ {
+        "identifier" : "changeNote",
+        "language" : "undefined",
+        "value" : "_:genid101",
+        "type" : "label"
+      } ],
+      "historyNote" : [ {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "_:genid100",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "olb",
+      "en" : "One-line bio"
+    },
+    "domain" : "28",
+    "comment" : {
+      "en" : "A one-line biography of the person."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "124"
+  }, {
+    "range" : "1",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "126"
+  }, {
+    "range" : "1",
+    "domain" : "96",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "127"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/parent",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "28",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "plural" : [ {
+        "identifier" : "plural",
+        "language" : "en",
+        "value" : "Parents",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-05",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "parent",
+      "en" : "Parent"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "6",
+    "comment" : {
+      "en" : "A person that takes the parent role in an event."
+    },
+    "attributes" : [ "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/organization",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "28",
+    "annotations" : {
+      "plural" : [ {
+        "identifier" : "plural",
+        "language" : "en",
+        "value" : "Organizations",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-05",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "organization",
+      "en" : "Organization"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "6",
+    "comment" : {
+      "en" : "An organization that plays a role in an event."
+    },
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/partner",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "28",
+    "annotations" : {
+      "plural" : [ {
+        "identifier" : "plural",
+        "language" : "en",
+        "value" : "Partners",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-05",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "partner",
+      "en" : "Partner"
+    },
+    "superproperty" : [ "5" ],
+    "minCardinality" : "2",
+    "domain" : "6",
+    "comment" : {
+      "en" : "A person that is involved in a event as a partner in a relationship."
+    },
+    "attributes" : [ "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/precedingEvent",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "6",
+    "annotations" : {
+      "plural" : [ {
+        "identifier" : "plural",
+        "language" : "en",
+        "value" : "Preceding Events",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-06",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "precedingEvent",
+      "en" : "Preceding Event"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "6",
+    "subproperty" : [ "110" ],
+    "comment" : {
+      "en" : "An event that occurs and concludes at some time before this event."
+    },
+    "attributes" : [ "transitive", "object" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/officiator",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "28",
+    "annotations" : {
+      "plural" : [ {
+        "identifier" : "plural",
+        "language" : "en",
+        "value" : "Officiators",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-05",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "officiator",
+      "en" : "Officiator"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "6",
+    "comment" : {
+      "en" : "A person that officiates at a ceremonial event."
+    },
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/event",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "6",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "plural" : [ {
+        "identifier" : "plural",
+        "language" : "en",
+        "value" : "Life Events",
+        "type" : "label"
+      } ],
+      "changeNote" : [ {
+        "identifier" : "changeNote",
+        "language" : "undefined",
+        "value" : "_:genid92",
+        "type" : "label"
+      } ],
+      "historyNote" : [ {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "_:genid91",
+        "type" : "label"
+      }, {
+        "identifier" : "historyNote",
+        "language" : "undefined",
+        "value" : "_:genid90",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "event",
+      "en" : "Life Event"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "7",
+    "subproperty" : [ "87", "115" ],
+    "comment" : {
+      "en" : "An event associated with a person, group or organization."
+    },
+    "attributes" : [ "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/initiatingEvent",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "6",
+    "annotations" : {
+      "plural" : [ {
+        "identifier" : "plural",
+        "language" : "en",
+        "value" : "Initiating Event",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-06",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "initiatingEvent",
+      "en" : "Initiating Event"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "85",
+    "comment" : {
+      "en" : "An event that marks the start of an interval and/or relationship. The event contributes to and/or causes of the state of affairs that hold during the interval. For example a period of study may be initiated by an Enrolment event."
+    },
+    "attributes" : [ "object" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://purl.org/dc/elements/1.1/subject",
+    "baseIri" : "http://purl.org/dc/elements/1.1",
+    "range" : "130",
+    "label" : {
+      "IRI-based" : "subject"
+    },
+    "domain" : "44",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/followingEvent",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "6",
+    "annotations" : {
+      "plural" : [ {
+        "identifier" : "plural",
+        "language" : "en",
+        "value" : "Following Events",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-06",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "followingEvent",
+      "en" : "Following Event"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "6",
+    "subproperty" : [ "116" ],
+    "comment" : {
+      "en" : "An event that starts at some time after this event."
+    },
+    "attributes" : [ "transitive", "object" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/concurrentEvent",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "6",
+    "annotations" : {
+      "plural" : [ {
+        "identifier" : "plural",
+        "language" : "en",
+        "value" : "Concurrent Events",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-06",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "concurrentEvent",
+      "en" : "Concurrent Event"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "6",
+    "comment" : {
+      "en" : "An event that occurs while this event is occurring. The events need not start or conclude at the same times."
+    },
+    "attributes" : [ "object", "symmetric" ],
+    "id" : "112"
+  }, {
+    "range" : "6",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/eventInterval",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "76",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-06-05",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "eventInterval",
+      "en" : "Event Interval"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "The interval during which the event occurs. This interval represents the exact interval of occurence for an event, it starts at the moment the event commences and finishes when the event concludes. In other words both the event and the interval start at the same instant of time and extend for the same duration."
+    },
+    "attributes" : [ "object" ],
+    "id" : "133"
+  }, {
+    "range" : "6",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
+  }, {
+    "range" : "24",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "135"
+  }, {
+    "range" : "33",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "136"
+  }, {
+    "range" : "33",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "137"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/interval",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "76",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-06-05",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "interval",
+      "en" : "Relationship Interval"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "The interval during which the relationship persists."
+    },
+    "attributes" : [ "object" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/immediatelyPrecedingEvent",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "6",
+    "annotations" : {
+      "plural" : [ {
+        "identifier" : "plural",
+        "language" : "en",
+        "value" : "Immediately Preceding Events",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-06",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "immediatelyPrecedingEvent",
+      "en" : "Immediately Preceding Event"
+    },
+    "superproperty" : [ "114", "9" ],
+    "domain" : "6",
+    "comment" : {
+      "en" : "An event that occurs and concludes immediately before this event."
+    },
+    "attributes" : [ "object" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/position",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "28",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "plural" : [ {
+        "identifier" : "plural",
+        "language" : "en",
+        "value" : "Positions",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2010-05-05",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "position",
+      "en" : "Position"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "6",
+    "comment" : {
+      "en" : "The employment position or public office involved in an event."
+    },
+    "attributes" : [ "object" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://purl.org/vocab/bio/0.1/relationship",
+    "baseIri" : "http://purl.org/vocab/bio/0.1",
+    "range" : "20",
+    "annotations" : {
+      "plural" : [ {
+        "identifier" : "plural",
+        "language" : "en",
+        "value" : "Relationships",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/bio/0.1/",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2011-06-14",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "relationship",
+      "en" : "Relationship"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "7",
+    "comment" : {
+      "en" : "A relationship that a person, group or organization participates in for some time."
+    },
+    "attributes" : [ "object" ],
+    "id" : "21"
+  } ]
+}
