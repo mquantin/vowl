@@ -33,7 +33,7 @@ while not c:
         option = '-iri'
 
 print(f'Enter the {c} :')
-ontoRDFdata = input()
+ontoRDFdata = input().strip()
 
 #name of the ontology
 ontologyShortName = os.path.basename(ontoRDFdata)
